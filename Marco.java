@@ -9,7 +9,8 @@ public class Marco extends JFrame {
         setSize(800, 600);
         setLocationRelativeTo(null);
 
-        PanelPrincipal panelPrincipal = new PanelPrincipal();
+        // Pass the current JFrame instance to PanelPrincipal
+        PanelPrincipal panelPrincipal = new PanelPrincipal(this);
         setContentPane(panelPrincipal);
 
         setVisible(true);
