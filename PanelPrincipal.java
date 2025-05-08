@@ -44,12 +44,12 @@ public class PanelPrincipal extends JPanel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == botonJugar) {
-            // Cambiar al panel de juego
-            PanelPartida panelPartida = new PanelPartida();
-            marcoGeneral.setContentPane(panelPartida);
-            marcoGeneral.revalidate();
-        } else if (e.getSource() == botonReglas) {
+    	if (e.getSource() == botonJugar) {
+    	    // Cambiar al panel de juego
+    	    PanelPartida panelPartida = new PanelPartida();
+    	    marcoGeneral.setContentPane(panelPartida);
+    	    marcoGeneral.revalidate();
+    	} else if (e.getSource() == botonReglas) {
             JOptionPane.showMessageDialog(this, "Aquí van las reglas del juego.");
         } else if (e.getSource() == botonInfo) {
             JOptionPane.showMessageDialog(this, "Información sobre el juego.");
